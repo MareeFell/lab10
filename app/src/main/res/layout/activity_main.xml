@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="Open"
+        android:id="@+id/open"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:maxWidth="100dp"
+            android:id="@+id/image"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:maxWidth="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/image1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="Copy"
+        android:layout_marginStart="10dp"
+        android:id="@+id/copy"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/invert"
+        android:text="Invert colors"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gray"
+        android:text="GrayScale"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/black_white_threshold"
+        android:min="0"
+        android:max="255"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/black_white"
+        android:text="Black white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/bright_bar"
+        android:min="0"
+        android:max="255"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bright"
+        android:text="Bright"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/horizontal"
+        android:text="Horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vertical"
+        android:text="Vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
